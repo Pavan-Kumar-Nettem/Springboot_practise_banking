@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Customer Details</title>
+</head>
+<body>
+<div align="center">
+<h1>Customer Details</h1>
+ <table border="1" cellpadding="10">
+  <thead>
+   <tr>
+        <th>id</th>
+        <th>first_name</th>
+        <th>last_name</th>
+        <th>Sex</th>
+        <th>Age</th>
+        <th>email_id</th>
+        <th>Phone_Number</th>
+        <th>Aadhar_number</th>
+        <th>Actions</th>
+   </tr>
+  </thead>
+  <tbody>
+  <tr th:each="product : ${listCustomers}">
+   <td th:text="${customer.id}">id</td>
+   <td th:text="${customer.first_name}">first_name</td>
+   <td th:text="${customer.last_name}">last_name</td>
+   <td th:text="${customer.Sex}">Sex</td>
+   <td th:text="${customer.Age}">Age</td>
+   <td th:text="${customer.email_id}">email_id</td>
+   <td th:text="${customer.Phone_Number}">Phone_Number</td>
+   <td th:text="${customer.Aadhar_number}">Aadhar_number</td>
+   <td>
+   
+   </td>
+  </tr>
+  
+  </tbody>
+ </table>
+</div>
+</body>
+</html>
